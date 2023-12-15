@@ -18,9 +18,10 @@ const questions = () =>
                 name: 'description',
             },
             {
-                type: 'confirm',
-                message: 'Confirm whether you need a Table of Contents section: (y/n)',
+                type: 'checkbox',
+                message: 'What sections do you need for your README.md?',
                 name: 'tableOfContents',
+                choices: ['Installation', 'Usage', 'Licence', 'Contributing', 'Tests', 'Questions']
             },
             {
                 type: 'input',
@@ -54,6 +55,44 @@ const questions = () =>
                 name: 'questions',
             },
         ]);
+
+//README template
+const generateReadMe = () =>
+`
+# ${answers.title}
+
+## Overview
+
+### ${answers.description}
+
+## Table of Contents
+
+Each README section if checkboxed or just a confirm and write N/A as default 
+
+## Installation
+### ${answers.installation}
+
+## Usage
+### ${answers.installation}
+
+## Licence
+### ${answers.licence}
+
+## Contributing
+### ${answers.contributing}
+
+## Tests
+### ${answers.tests}
+
+## Questions
+### ${answers.questions}
+`;
+
+questions()
+        .then((answers) => fs.writeFile('README.md', generateReadMe(answers)))
+        .then(() => console.log("Successful"))
+        .catch((err) => console.error(err));
+
 
 // function to write README file
 function writeToFile(fileName, data) {
