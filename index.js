@@ -18,10 +18,9 @@ const questions = () =>
                 name: 'description',
             },
             {
-                type: 'checkbox',
-                message: 'What sections do you need for your README.md?',
+                type: 'confirm',
+                message: 'Confirm whether you need a Table of Contents section: (y/n)',
                 name: 'tableOfContents',
-                choices: ['Installation', 'Usage', 'Licence', 'Contributing', 'Tests', 'Questions']
             },
             {
                 type: 'input',
