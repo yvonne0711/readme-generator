@@ -116,7 +116,7 @@ ${answers.contributing}
 ${answers.tests}
 
 ## Questions
-Contact me at [GitHub](https://github.com/${answers.github}) or [${answers.email}](mailto:${answers.email})
+Contact me at [GitHub](https://github.com/${answers.github}) or [${answers.email}](mailto:${answers.email}).
 `;
 
 questions()
