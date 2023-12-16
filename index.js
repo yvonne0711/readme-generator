@@ -50,7 +50,7 @@ const questions = () =>
             },
             {
                 type: 'input',
-                message: 'Enter your Github:',
+                message: 'Enter your Github username:',
                 name: 'github',
             },
             {
@@ -85,8 +85,6 @@ const generateReadMe = (answers) =>
 # ${answers.title}
 
 ## Table of Contents
-
-Each README section if checkboxed or just a confirm and write N/A as default 
 
 - [Overview](#overview)
   - [Description](#description)
