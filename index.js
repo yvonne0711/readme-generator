@@ -2,6 +2,11 @@ const fs = require("fs");
 const path = require('path');
 const inquirer = require("inquirer");
 const generateMarkdown = require("./utils/generateMarkdown");
+// from activity 7 
+// asychronous 
+const util = require('util');
+
+const writeFileAsync = util.promisify(fs.writeFile);
 
 // array of questions for user
 const questions = () =>
@@ -17,12 +22,6 @@ const questions = () =>
                 message: 'Write a description of your project:',
                 name: 'description',
             },
-            // {
-            //     type: 'checkbox',
-            //     message: 'What sections do you need for your README.md?',
-            //     name: 'tableOfContents',
-            //     choices: ['Installation', 'Usage', 'License', 'Contributing', 'Tests', 'Questions']
-            // },
             {
                 type: 'input',
                 message: 'What are the steps required for installing your project?',
@@ -123,19 +122,9 @@ Contact me at [GitHub](https://github.com/${answers.github}) or [${answers.email
 `;
 
 questions()
-        .then((answers) => fs.writeFile('README.md', generateReadMe(answers)))
+        .then((answers) => fs.writeFileAsync('README.md', generateReadMe(answers)))
         .then(() => console.log("Successful"))
         .catch((err) => console.error(err));
 
 
-// function to write README file
-function writeToFile(fileName, data) {
-}
 
-// function to initialize program
-function init() {
-    //generateMarkdown.js()
-}
-
-// function call to initialize program
-init();
