@@ -3,8 +3,6 @@
 
 ## Table of Contents
 
-Each README section if checkboxed or just a confirm and write N/A as default 
-
 - [Overview](#overview)
   - [Description](#description)
 - [Installation](#installation)
@@ -35,4 +33,4 @@ N/A
 N/A
 
 ## Questions
-Contact me at [GitHub](https://github.com/https://github.com/yvonne0711) or [yvonnewong1107@gmail.com](mailto:yvonnewong1107@gmail.com)
+Contact me at [GitHub](https://github.com/yvonne0711) or [yvonnewong1107@gmail.com](mailto:yvonnewong1107@gmail.com)
