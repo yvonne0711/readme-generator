@@ -122,7 +122,7 @@ Contact me at [GitHub](https://github.com/${answers.github}) or [${answers.email
 `;
 
 questions()
-        .then((answers) => fs.writeFileAsync('README.md', generateReadMe(answers)))
+        .then((answers) => writeFileAsync('README.md', generateReadMe(answers)))
         .then(() => console.log("Successful"))
         .catch((err) => console.error(err));
 
