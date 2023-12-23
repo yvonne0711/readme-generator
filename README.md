@@ -1,4 +1,3 @@
-
 # README generator
 
 ## Table of Contents

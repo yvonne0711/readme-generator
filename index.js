@@ -81,8 +81,7 @@ const generateLicenseBadge = (license) => {
 
 //README template
 const generateReadMe = (answers) =>
-`
-# ${answers.title}
+`# ${answers.title}
 
 ## Table of Contents
 
