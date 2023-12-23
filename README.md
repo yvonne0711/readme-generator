@@ -20,7 +20,7 @@ A project to generate a README file using the command-line with the use of Node.
 Install Node.js on your local machine. Clone the repository on your local machine then open up the project in your code editor. In the terminal, navigate to the project directory and install the `fs`, `path`, `inquirer` and `util` packages using the command `npm install`.
 
 ## Usage
-Install Node.js on your local machine. Clone the repository on your local machine then open up the project in your code editor. In the terminal, navigate to the project directory and install the `fs`, `path`, `inquirer` and `util` packages using the command `npm install`.
+In your terminal, run `node index.js` and you'll be prompted with questions to answer about your project including the title, description, installaion instructions, usage, the licence, contributing details, test details, and additional questions. This will generate a README file after completion.
 
 ## License
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
